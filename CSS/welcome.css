@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+    background-color: #24353F;
+}
+
+
+.navbar {
+    background-color: #24353F !important;
+    color: white !important;
+    box-shadow: -5px 10px 7px 5px black;
+}
+
+.box {
+    background-color: #24353F !important;
+    box-shadow: -5px 10px 10px 5px black;
+    width: 500px;
+    height: 200px;
+    color: #17A2B8;
+    margin-top: 50px;
+}
+p{
+    line-height:48px;
+    font-size: 40px;
+}
