@@ -4,46 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <!-- css links -->
-    <link rel="stylesheet" href="CSS/signin.css">
-    <link rel="stylesheet" href="CSS/all.min.css">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="download.svg">
-
-
+    <title>routeWeather</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 
 <body>
-    <div class="login">
-        <section>
-            <div class="container pt-4 pb-3 w-50">
-                <h1 class="mb-3">Smart Login System</h1>
-                <div class="mb-3">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg weather_navbar p-4">
+            <div class="container">
 
-                    <input id="emailUser" type="text" class="form-control " id="formGroupExampleInput" placeholder="Enter your email">
+                <img src="image/logo@2x.png" class="logo" alt="">
+                <a class="navbar-brand align-items " href="#">
+
+                    <h6 class="text-white ps-2">Weather</h6>
+                    <p class="text ps-2">tagline goes here</p>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-white mx-3 btn btn-outline-primary rounded-5 px-4  border border-1 border-primary bg-transparent"
+                                aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white  mx-3 btn btn-outline-primary" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white  mx-3 btn btn-outline-primary " href="#">Live cameras</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white  mx-3 btn btn-outline-primary" href="#">photos</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white  mx-3 btn btn-outline-primary" href="#">contact</a>
+                        </li>
+
+
+
+                    </ul>
+
                 </div>
+            </div>
+        </nav>
 
-                <div class="mb-3">
-                   
-                    <input id="passwordUser"  type="password" class="form-control text-secondary" id="floatingPassword"
-                        placeholder="enter your Password">
+        <div class="pic  ">
+            <div class="ms-3 d-flex justify-content-center pt-5">
 
-                </div>
-                
-                <p id="redtext" class="text-danger"></p>
-                <p id="greentext" class="text-success"></p>
-                <p id="repet" class="text-danger"></p>
-                <button onclick="welcomeUser()" class="w-100 btn btn-outline-info mb-2">Login</button>
-                <p class="text-white ">Don’t have an account?
-                    <a   id="signin" class="text-white text-decoration-none" href="signup.html">Sign up</a>
-                </p>
+                <input type="search" id="searchInput" class="form-control w-50 rounded-5 bg-body-black"
+                    placeholder="FIND YOUR LOCATION">
+                <button id="Find" class="btn btn-info rounded-5">Find</button>
+
+            </div>
+            <div class="row container my-5 mx-auto" id="rowTemperature">
+
             </div>
 
-        </section>
-        <script src="JS/bootstrap.bundle.min.js"></script>
-        <script src="JS/signin.js"></script>
+
+        </div>
+
+
+    </div>
+    
+    <div class="foot">
+        <div class=" container d-flex justify-content-around">
+            <div class="ms-3 Pt-5 ">
+
+                <input type="search" class="form-control w-50 rounded-5 bg-body-black "
+                    placeholder="Enter your email for subscribe">
+                <p class="text-white pt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+            </div>
+            <div class="icons d-flex align-items-center ">
+                <div class="circle_black p-1 d-flex justify-content-center align-items-center"> <i
+                        class="fa-brands fa-facebook  text-primary fs-5"></i></div>
+                <div class="circle_black p-1 d-flex justify-content-center align-items-center"> <i
+                        class="fa-brands fa-twitter text-primary fs-5"></i></div>
+                <div class="circle_black p-1 d-flex justify-content-center align-items-center"> <i
+                        class="fa-brands fa-google-plus-g text-primary fs-5"></i></div>
+                <div class="circle_black p-1 d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-pinterest text-primary fs-5"></i></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
